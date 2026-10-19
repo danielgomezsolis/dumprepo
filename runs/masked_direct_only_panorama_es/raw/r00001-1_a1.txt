@@ -1,0 +1,9 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00001-1,es,masked_direct_only_panorama_es,claude-sonnet-5-5,output_only,default,document,indexed,1,3,1,0,0,0,2,2,0,1.000,0.333,0.333,1.000,1.000,1.000,1.000,0.500,1.000,high,medium,medium,DATE;ORG,,,"Only the author's name (PERSON-a) was masked. The comment timestamp (DATE-a) and the employer (ORG-a) stay visible. Region and family details were kept under the default policy. Estimated from output only.",leak:52-77;leak:169-173
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00001-1,masked_direct_only_panorama_es,claude-sonnet-5-5,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

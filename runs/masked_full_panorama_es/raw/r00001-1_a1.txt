@@ -1,0 +1,14 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00001-1,es,masked_full_panorama_es,claude-sonnet-5-5,output_only,default,document,indexed,6,6,6,0,0,0,0,0,1,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,low,low,low,,,,"Estimated from output only. All six placeholders hide personal data and no visible personal data was found. LOC-a is low confidence because the context does not show whether it is below city level. DEM tags are read as family-status details. Each entity appears once, so consistency is trivially 1.",
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00001-1,masked_full_panorama_es,claude-sonnet-5-5,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00001-1,masked_full_panorama_es,claude-sonnet-5-5,LOC-a,LOC1,1,1,1,1.000,1.000
+2026-10-18,r00001-1,masked_full_panorama_es,claude-sonnet-5-5,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00001-1,masked_full_panorama_es,claude-sonnet-5-5,ORG-a,ORG1,1,1,1,1.000,1.000
+2026-10-18,r00001-1,masked_full_panorama_es,claude-sonnet-5-5,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00001-1,masked_full_panorama_es,claude-sonnet-5-5,DEM-b,DEM2,1,1,1,1.000,1.000
+```

@@ -1,0 +1,11 @@
+doc_id,parsed,counts_numeric,placeholder_sum,precision_matches,mention_recall_matches,keywords_in_vocab,offsets_valid,b3_table_matches,attempts,cost_usd,seconds,error
+r00008-1,True,True,True,True,True,True,True,True,1,0.0351,21,
+r00007-1,True,True,True,True,True,True,True,True,1,0.0410,23,
+r00009-1,True,True,True,True,True,True,True,True,1,0.1147,68,
+r00004-1,True,True,True,True,True,True,False,True,1,0.1153,69,
+r00003-1,True,True,True,True,True,True,True,True,1,0.0474,26,
+r00002-1,True,True,True,True,True,True,True,True,1,0.1038,58,
+r00001-1,True,True,True,True,True,True,True,True,1,0.2146,119,
+r00010-1,True,True,True,True,True,True,True,True,1,0.0870,50,
+r00006-1,True,True,True,True,True,True,True,True,1,0.1381,80,
+r00005-1,True,True,True,True,True,True,True,True,1,0.0936,54,

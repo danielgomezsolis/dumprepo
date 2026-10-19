@@ -1,0 +1,16 @@
+call_id,eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+r00008-1,2026-10-18,PANORAMA-0C5CD,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00001-1,2026-10-18,PANORAMA-014EB,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00009-1,2026-10-18,PANORAMA-0D79F,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00004-1,2026-10-18,PANORAMA-076CF,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00004-1,2026-10-18,PANORAMA-076CF,masked_direct_only_panorama_en,default,CODE-a,CODE1,1,1,1,1.000,1.000
+r00004-1,2026-10-18,PANORAMA-076CF,masked_direct_only_panorama_en,default,EMAIL-a,CODE2,1,1,1,1.000,1.000
+r00002-1,2026-10-18,PANORAMA-02049,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00007-1,2026-10-18,PANORAMA-0BF74,masked_direct_only_panorama_en,default,PERSON-a,CODE1,1,1,1,1.000,1.000
+r00003-1,2026-10-18,PANORAMA-06079,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00003-1,2026-10-18,PANORAMA-06079,masked_direct_only_panorama_en,default,PERSON-b,PERSON2,1,1,1,1.000,1.000
+r00006-1,2026-10-18,PANORAMA-079D2,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00005-1,2026-10-18,PANORAMA-07946,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00010-1,2026-10-18,PANORAMA-128C0,masked_direct_only_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+r00010-1,2026-10-18,PANORAMA-128C0,masked_direct_only_panorama_en,default,IDENTIFIER-a,CODE1,1,1,1,1.000,1.000
+r00010-1,2026-10-18,PANORAMA-128C0,masked_direct_only_panorama_en,default,EMAIL-a,CODE2,1,1,1,1.000,1.000

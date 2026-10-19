@@ -1,0 +1,14 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00005-1,en,masked_full_panorama_en,default,output_only,default,document,indexed,6,6,6,0,0,0,0,0,3,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,low,low,low,,,low-context,"All six placeholders judged as masked personal data; no visible leaks found. DEM-a, DEM-d and DATETIME-a have little context, so their categories are estimated (output only).",
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00005-1,masked_full_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_en,default,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_en,default,DEM-b,DEM2,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_en,default,DEM-c,DEM3,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_en,default,DATETIME-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_en,default,DEM-d,DEM4,1,1,1,1.000,1.000
+```

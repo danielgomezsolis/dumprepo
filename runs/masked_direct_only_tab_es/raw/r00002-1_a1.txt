@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00002-1,es,masked_direct_only_tab_es,default,output_only,default,document,indexed,2,5,2,0,0,0,3,4,1,1.000,0.400,0.400,1.000,1.000,1.000,1.000,0.571,1.000,high,high,high,PERSON;DATE,,low-context,"Only the case number and the applicant were masked. Two third-party names (PERSON-b and PERSON-c, the representing lawyers) stay visible, as does a personal detention date (DATE-a). Offsets are estimated. Kept as borderline: birth year, city of residence, the organization name and procedural dates.",leak:490-500;leak:510-518;leak:2636-2655
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00002-1,masked_direct_only_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_direct_only_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00005-1,es,masked_direct_only_tab_es,default,output_only,default,document,indexed,2,4,2,0,0,0,4,3,0,1.000,0.333,0.250,1.000,1.000,1.000,1.000,0.500,1.000,high,high,medium,PERSON,,leak-surname;leak-repeat-mention,"Only the case code and the applicant's first mention were masked. PERSON-a's surname is visible in two later mentions; PERSON-b (lawyer) and PERSON-c (government agent) are fully visible. Kept as borderline: procedural dates, nationality and specific academic occupation with the university.",leak:379-392;leak:514-532;leak:4234-4241;leak:4259-4266
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00005-1,masked_direct_only_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_direct_only_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

@@ -1,0 +1,25 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00009-1,es,masked_partial070_tab_es,default,output_only,default,document,indexed,18,24,17,0,0,1,7,3,3,1.000,0.680,0.667,1.000,1.000,1.000,1.000,0.810,1.000,medium,high,high,DATE;HEALTH;QUANTITY,,leak-repeat-mention;partial-in-tag;year-kept,"Three full dates and three eye-condition details remain visible in the text. QUANTITY-a keeps a digit beside its tag, and QUANTITY-b is repeated as a visible euro figure. Tag numbering is consistent, with no splits or merges. Birth year and city kept as the policy allows.",leak:312-331;leak:930-952;leak:1076-1107;leak:1451-1469;partial:1782-1794;leak:2629-2638;leak:2804-2836;leak:2886-2909
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00009-1,masked_partial070_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,ORG-a,ORG1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,HEALTH-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,HEALTH-b,DEM2,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-g,DATETIME7,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,QUANTITY-b,QUANTITY2,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-h,DATETIME8,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,HEALTH-c,DEM3,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_tab_es,default,DATE-i,DATETIME9,1,1,1,1.000,1.000
+```

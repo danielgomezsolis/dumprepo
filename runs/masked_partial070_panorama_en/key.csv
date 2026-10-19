@@ -1,0 +1,11 @@
+doc_id,rep,source_line,data_id,language,masking_condition,annotator,source_file
+r00001-1,1,1,PANORAMA-014EB,en,partial_recall_070,annotator3,masked_partial070_panorama_en.jsonl
+r00008-1,1,8,PANORAMA-0C5CD,en,partial_recall_070,annotator1,masked_partial070_panorama_en.jsonl
+r00009-1,1,9,PANORAMA-0D79F,en,partial_recall_070,annotator2,masked_partial070_panorama_en.jsonl
+r00004-1,1,4,PANORAMA-076CF,en,partial_recall_070,annotator5,masked_partial070_panorama_en.jsonl
+r00007-1,1,7,PANORAMA-0BF74,en,partial_recall_070,annotator1,masked_partial070_panorama_en.jsonl
+r00002-1,1,2,PANORAMA-02049,en,partial_recall_070,annotator2,masked_partial070_panorama_en.jsonl
+r00006-1,1,6,PANORAMA-079D2,en,partial_recall_070,annotator3,masked_partial070_panorama_en.jsonl
+r00003-1,1,3,PANORAMA-06079,en,partial_recall_070,annotator4,masked_partial070_panorama_en.jsonl
+r00010-1,1,10,PANORAMA-128C0,en,partial_recall_070,annotator5,masked_partial070_panorama_en.jsonl
+r00005-1,1,5,PANORAMA-07946,en,partial_recall_070,annotator3,masked_partial070_panorama_en.jsonl

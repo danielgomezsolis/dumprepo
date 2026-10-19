@@ -1,0 +1,22 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00008-1,es,masked_full_tab_es,default,output_only,default,document,indexed,15,14,14,0,1,0,0,3,0,0.933,1.000,1.000,1.000,1.000,1.000,1.000,0.966,1.000,medium,medium,low,,LOCATION,overmask-city,"Every placeholder is a unique tag with no repeated mentions, so there are no splits or merges. The residence city (LOCATION) was masked although the default policy lets cities stay. No visible personal data found; the Government agent PERSON-b was masked as a named individual (medium confidence). Estimated figures from output only.",over:1228-1234
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00008-1,masked_full_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,ORG-a,ORG1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-g,DATETIME7,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-h,DATETIME8,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_es,default,DATE-i,DATETIME9,1,1,1,1.000,1.000
+```

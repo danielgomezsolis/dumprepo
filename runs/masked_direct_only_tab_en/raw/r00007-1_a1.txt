@@ -1,0 +1,11 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00007-1,en,masked_direct_only_tab_en,default,output_only,default,document,indexed,3,12,3,0,0,0,9,6,0,1.000,0.250,0.250,1.000,1.000,1.000,1.000,0.400,1.000,high,high,medium,PERSON;DATE;ORG,,,"All 3 placeholders (2 CODE, 1 PERSON) are correct and consistent, but the tool left the Government Agent's full name (PERSON-b) visible. It also left the prison name (ORG-a) and seven dates tied to the applicant's applications and correspondence (DATE-a to DATE-g) visible. Estimated from the output only.",leak:356-372;leak:377-391;leak:484-504;leak:1723-1736;leak:1744-1755;leak:1820-1838;leak:2069-2082;leak:2317-2329;leak:2395-2410
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00007-1,masked_direct_only_tab_en,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_direct_only_tab_en,default,CODE-b,CODE2,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_direct_only_tab_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00005-1,en,masked_direct_only_tab_en,default,output_only,default,document,indexed,2,4,2,0,0,0,4,3,0,1.000,0.333,0.250,1.000,1.000,1.000,1.000,0.500,1.000,high,high,medium,PERSON,,leak-repeat-mention,"Only the case code and the applicant's first mention are masked. PERSON-a's surname is visible twice in the settlement text, and the names of two other persons (PERSON-b and PERSON-c) are unmasked. Occupation, employer and procedural dates were kept as direct-only masking; these keep rows leave a high singling-out risk.",leak:335-348;leak:471-490;leak:3919-3926;leak:3942-3949
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00005-1,masked_direct_only_tab_en,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_direct_only_tab_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

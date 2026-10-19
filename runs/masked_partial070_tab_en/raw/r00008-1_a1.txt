@@ -1,0 +1,17 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00008-1,en,masked_partial070_tab_en,claude-sonnet-5-5,output_only,default,document,indexed,9,13,9,0,0,0,4,4,0,1.000,0.692,0.692,1.000,1.000,1.000,1.000,0.818,1.000,medium,high,low,DATE;ORG,,year-kept,"Three dates tied to the applicant (DATE-f, DATE-g, DATE-h) and a law firm name (ORG-a) stay visible while other dates were masked; birth year, region, London and a public authority were kept as the policy allows. Estimated from output only.",leak:318-330;leak:366-375;leak:1336-1348;leak:1439-1453
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-e,DATETIME5,1,1,1,1.000,1.000
+```

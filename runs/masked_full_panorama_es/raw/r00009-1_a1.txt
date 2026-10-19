@@ -1,0 +1,12 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00009-1,es,masked_full_panorama_es,default,output_only,default,document,indexed,4,4,4,0,0,0,0,2,1,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,low,low,medium,,,low-context,"All four placeholders judged as masked personal data (PERSON-a, ORG-a, DEM-a, DATE-a). The DATETIME1 tag has little context so its category is uncertain. Generic health and work-shift mentions were kept as non-identifying. Estimated from the output only.",
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00009-1,masked_full_panorama_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_full_panorama_es,default,ORG-a,ORG1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_full_panorama_es,default,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_full_panorama_es,default,DATE-a,DATETIME1,1,1,1,1.000,1.000
+```

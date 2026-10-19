@@ -1,0 +1,11 @@
+doc_id,rep,source_line,data_id,language,masking_condition,annotator,source_file
+r00008-1,1,8,TAB-088c0,en,partial_recall_070,annotator4,masked_partial070_tab_en.jsonl
+r00009-1,1,9,TAB-0e5b0,en,partial_recall_070,annotator3,masked_partial070_tab_en.jsonl
+r00004-1,1,4,TAB-035bd,en,partial_recall_070,annotator1,masked_partial070_tab_en.jsonl
+r00007-1,1,7,TAB-07d14,en,partial_recall_070,annotator5,masked_partial070_tab_en.jsonl
+r00002-1,1,2,TAB-016fe,en,partial_recall_070,annotator5,masked_partial070_tab_en.jsonl
+r00006-1,1,6,TAB-054e0,en,partial_recall_070,annotator4,masked_partial070_tab_en.jsonl
+r00003-1,1,3,TAB-02545,en,partial_recall_070,annotator1,masked_partial070_tab_en.jsonl
+r00001-1,1,1,TAB-00ad1,en,partial_recall_070,annotator4,masked_partial070_tab_en.jsonl
+r00010-1,1,10,TAB-0ec97,en,partial_recall_070,annotator3,masked_partial070_tab_en.jsonl
+r00005-1,1,5,TAB-04e12,en,partial_recall_070,annotator3,masked_partial070_tab_en.jsonl

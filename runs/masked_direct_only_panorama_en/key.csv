@@ -1,0 +1,11 @@
+doc_id,rep,source_line,data_id,language,masking_condition,annotator,source_file
+r00008-1,1,8,PANORAMA-0C5CD,en,direct_only,annotator1,masked_direct_only_panorama_en.jsonl
+r00001-1,1,1,PANORAMA-014EB,en,direct_only,annotator3,masked_direct_only_panorama_en.jsonl
+r00009-1,1,9,PANORAMA-0D79F,en,direct_only,annotator2,masked_direct_only_panorama_en.jsonl
+r00004-1,1,4,PANORAMA-076CF,en,direct_only,annotator5,masked_direct_only_panorama_en.jsonl
+r00002-1,1,2,PANORAMA-02049,en,direct_only,annotator2,masked_direct_only_panorama_en.jsonl
+r00007-1,1,7,PANORAMA-0BF74,en,direct_only,annotator1,masked_direct_only_panorama_en.jsonl
+r00003-1,1,3,PANORAMA-06079,en,direct_only,annotator4,masked_direct_only_panorama_en.jsonl
+r00006-1,1,6,PANORAMA-079D2,en,direct_only,annotator3,masked_direct_only_panorama_en.jsonl
+r00005-1,1,5,PANORAMA-07946,en,direct_only,annotator3,masked_direct_only_panorama_en.jsonl
+r00010-1,1,10,PANORAMA-128C0,en,direct_only,annotator5,masked_direct_only_panorama_en.jsonl

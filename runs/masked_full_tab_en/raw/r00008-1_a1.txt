@@ -1,0 +1,23 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00008-1,en,masked_full_tab_en,claude-sonnet-5-5,output_only,default,document,indexed,15,15,15,0,0,0,0,5,0,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,low,medium,low,,,,"All 15 placeholders hide personal data with fitting labels and each entity has one identity. Visible country, London and public authority mentions may stay under the default policy. Estimated figures from output only.",
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,ORG-a,ORG1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,LOC-a,LOC1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-g,DATETIME7,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-h,DATETIME8,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_full_tab_en,claude-sonnet-5-5,DATETIME-i,DATETIME9,1,1,1,1.000,1.000
+```

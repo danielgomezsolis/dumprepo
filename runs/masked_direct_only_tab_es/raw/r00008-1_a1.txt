@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00008-1,es,masked_direct_only_tab_es,default,output_only,default,document,indexed,2,11,2,0,0,0,9,5,0,1.000,0.182,0.182,1.000,1.000,1.000,1.000,0.308,1.000,high,high,medium,PERSON;ORG;DATE,,year-kept,"Only the case number and the applicant were masked. PERSON-b (government agent) and ORG-a (law firm) are visible, as are seven DATE entities tied to the applicant's events (application, spouse's death, benefit decisions). Birth year, region and court decision date were kept as allowed.",leak:344-362;leak:403-412;leak:521-534;leak:1284-1302;leak:1396-1409;leak:1429-1448;leak:1535-1555;leak:1597-1619;leak:1735-1758
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00008-1,masked_direct_only_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00008-1,masked_direct_only_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

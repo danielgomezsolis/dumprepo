@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00004-1,en,masked_direct_only_tab_en,default,output_only,default,document,indexed,2,6,2,0,0,0,4,7,0,1.000,0.333,0.333,1.000,1.000,1.000,1.000,0.500,1.000,high,high,medium,PERSON;DATE,,year-kept,"Only the application number and the applicant's name were masked. PERSON-b (the Government's agent) is visible in full. DATE-a, DATE-b and DATE-c are personal-event dates (spouse's death, claim, reply) left unmasked. Birth year, city, court dates and other docket numbers were kept as the policy allows.",leak:436-449;leak:1472-1485;leak:1490-1507;leak:1707-1724
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00004-1,masked_direct_only_tab_en,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_direct_only_tab_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

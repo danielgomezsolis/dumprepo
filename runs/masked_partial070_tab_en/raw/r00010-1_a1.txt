@@ -1,0 +1,18 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00010-1,en,masked_partial070_tab_en,default,output_only,default,document,indexed,13,16,10,0,3,0,6,3,1,0.769,0.625,0.625,1.000,1.000,1.000,1.000,0.690,1.000,medium,high,medium,DATE;CODE,LOCATION;ORG,overmask-city;overmask-authority;year-kept,"Five procedural dates and the application number are left visible (DATE and CODE entities exposed). The city tag (twice) and one tag for a likely public body were masked although the default policy keeps them. Each tag has its own identity and its own entity, so there are no splits or merges. Visible case number and dates make the case easy to link to public records.",leak:54-62;over:367-373;leak:454-470;over:738-744;leak:1100-1113;leak:1577-1589;leak:1914-1925;over:1994-2000;leak:2199-2212
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00010-1,masked_partial070_tab_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,DATE-g,DATETIME7,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_tab_en,default,CODE-a,CODE1,1,1,1,1.000,1.000
+```

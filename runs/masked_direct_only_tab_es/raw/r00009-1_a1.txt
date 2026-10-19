@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00009-1,es,masked_direct_only_tab_es,default,output_only,default,document,indexed,2,11,2,0,0,0,10,7,0,1.000,0.167,0.182,1.000,1.000,1.000,1.000,0.286,1.000,high,high,high,PERSON;DATE;HEALTH,,year-kept;low-context,"Only the case code and the applicant's name tag were masked and both are consistent. PERSON-b (the lawyer) is visible. Seven personal dates (DATE-a to DATE-g) are visible. HEALTH-a (vision diagnosis) is visible in two passages. Court-act dates and the birth year were kept. Offsets are hand-counted estimates.","leak:311-330;leak:378-386;leak:766-786;leak:839-862;leak:978-1235;leak:1467-1486;leak:1703-1721;leak:1853-1871;leak:2961-2981;leak:3104-3203"
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00009-1,masked_direct_only_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_direct_only_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

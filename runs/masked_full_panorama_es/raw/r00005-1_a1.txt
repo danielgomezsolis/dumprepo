@@ -1,0 +1,12 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00005-1,es,masked_full_panorama_es,claude-sonnet-5-5,output_only,default,document,indexed,6,4,4,0,2,0,0,0,4,0.667,1.000,1.000,1.000,1.000,1.000,1.000,0.800,1.000,low,low,low,,DEM,overmask-common-word;low-context,"Estimated from the output only. The two DEM tags after the possessive 'mi' look like plain kinship words (DEM-c and DEM-d) and were judged over-masking with low confidence. The other DEM tags have unclear referents. No visible personal data found; every tool identity maps to one entity.",over:105-111;over:119-125
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00005-1,masked_full_panorama_es,claude-sonnet-5-5,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_es,claude-sonnet-5-5,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_es,claude-sonnet-5-5,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00005-1,masked_full_panorama_es,claude-sonnet-5-5,DEM-b,DEM4,1,1,1,1.000,1.000
+```

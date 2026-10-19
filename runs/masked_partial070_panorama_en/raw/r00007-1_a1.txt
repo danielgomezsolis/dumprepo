@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00007-1,en,masked_partial070_panorama_en,default,output_only,default,document,indexed,2,2,1,1,0,0,0,1,1,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,0.500,low,low,low,,,wrong-label;low-context,"PERSON-a is hidden but tagged with a CODE label instead of a person label; LOCATION-a is masked with too little context to tell whether it is below city level; the post timestamp was kept as non-personal metadata.",wrong-label:6-13
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00007-1,masked_partial070_panorama_en,default,PERSON-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_panorama_en,default,LOCATION-a,LOC1,1,1,1,1.000,1.000
+```

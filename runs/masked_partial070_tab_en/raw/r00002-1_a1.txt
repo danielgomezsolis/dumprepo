@@ -1,0 +1,19 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00002-1,en,masked_partial070_tab_en,claude-sonnet-5-5,output_only,default,document,indexed,12,14,12,0,0,0,3,5,0,1.000,0.800,0.786,1.000,1.000,1.000,1.000,0.889,1.000,high,high,high,PERSON;DATE;POLITICAL,,year-kept,"All 12 tags are correct and consistent. PERSON-a (the applicant) is fully visible and never masked. One date tied to the applicant (DATE-h) is visible. A political association (POLITICAL-a) is visible in the complaint summary. Birth year and city kept as the policy allows. Estimated from output only.",leak:312-323;leak:1173-1191;leak:3554-3566
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,PERSON-b,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,PERSON-c,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,DATE-g,DATETIME7,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_en,claude-sonnet-5-5,ORG-a,ORG1,2,2,2,1.000,1.000
+```

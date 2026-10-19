@@ -1,0 +1,11 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00010-1,es,masked_full_panorama_es,default,output_only,default,document,indexed,3,3,2,1,0,0,0,0,0,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,0.667,low,low,low,,,wrong-label,"EMAIL-a is tagged with a generic CODE label that does not fit its category; no visible personal data remains.",wrong-label:165-172
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00010-1,masked_full_panorama_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_full_panorama_es,default,ID-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_full_panorama_es,default,EMAIL-a,CODE2,1,1,1,1.000,1.000
+```

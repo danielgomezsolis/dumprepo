@@ -1,0 +1,19 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00002-1,es,masked_partial070_tab_es,default,output_only,default,document,indexed,12,13,12,0,0,0,2,4,0,1.000,0.857,0.846,1.000,1.000,1.000,1.000,0.923,1.000,high,medium,high,PERSON;DATE,,year-kept,"PERSON-a (the applicant) appears with a full name and no placeholder; DATE-h (date of the appeal decision) is visible while the other case dates are masked; the birth year is kept as the policy allows.",leak:337-348;leak:3654-3673
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00002-1,masked_partial070_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,PERSON-b,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,PERSON-c,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,ORG-a,ORG1,2,2,2,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00002-1,masked_partial070_tab_es,default,DATE-g,DATETIME7,1,1,1,1.000,1.000
+```

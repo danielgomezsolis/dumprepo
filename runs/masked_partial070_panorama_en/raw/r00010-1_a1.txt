@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00010-1,en,masked_partial070_panorama_en,default,output_only,default,document,indexed,2,2,2,0,0,0,1,0,0,1.000,0.667,0.500,1.000,1.000,1.000,1.000,0.800,1.000,high,high,low,EMAIL,,leak-surname,"PERSON-a is masked at the start but the work email address in the body is left visible and exposes part of the name and the employer; the user ID was masked correctly.",leak:119-146
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00010-1,masked_partial070_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00010-1,masked_partial070_panorama_en,default,CODE-a,CODE1,1,1,1,1.000,1.000
+```

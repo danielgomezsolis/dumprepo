@@ -1,0 +1,11 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00009-1,en,masked_partial070_panorama_en,default,output_only,default,document,indexed,3,3,3,0,0,0,0,2,0,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,low,low,medium,,,,"All three placeholders (PERSON-a, DEM-a, DATETIME-a) judged correctly masked, each with a distinct identity. The employer fragment and the generic health statements were kept as non-identifying under the default policy; the health content leaves some inference risk. Estimated from output only.",
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00009-1,masked_partial070_panorama_en,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_panorama_en,default,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_panorama_en,default,DATETIME-a,DATETIME1,1,1,1,1.000,1.000
+```

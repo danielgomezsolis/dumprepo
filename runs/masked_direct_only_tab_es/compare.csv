@@ -1,0 +1,11 @@
+doc_id,rep,data_id,language,condition,annotator,placeholders,gold_placeholders,placeholders_exact,n_leak,gold_leaks,n_over,n_wrong_label,mention_recall,gold_mention_recall,recall_abs_err,consistency,gold_consistency,keywords,line_valid
+r00008-1,1,TAB-088c0,es,direct_only,annotator4,2.000,2,True,9.000,13,0.000,0.000,0.182,0.133,0.049,1.000,1.000,year-kept,True
+r00001-1,1,TAB-00ad1,es,direct_only,annotator4,3.000,3,True,4.000,74,0.000,0.000,0.429,0.039,0.390,1.000,1.000,,True
+r00009-1,1,TAB-0e5b0,es,direct_only,annotator3,2.000,2,True,10.000,23,0.000,0.000,0.167,0.080,0.087,1.000,1.000,year-kept;low-context,True
+r00007-1,1,TAB-07d14,es,direct_only,annotator5,3.000,3,True,1.000,12,0.000,0.000,0.750,0.200,0.550,1.000,1.000,year-kept,True
+r00004-1,1,TAB-035bd,es,direct_only,annotator1,2.000,2,True,4.000,37,0.000,0.000,0.333,0.051,0.282,1.000,1.000,year-kept,True
+r00002-1,1,TAB-016fe,es,direct_only,annotator5,2.000,2,True,3.000,15,0.000,0.000,0.400,0.118,0.282,1.000,1.000,low-context,True
+r00003-1,1,TAB-02545,es,direct_only,annotator1,2.000,2,True,1.000,20,0.000,0.000,0.667,0.091,0.576,1.000,1.000,year-kept,True
+r00010-1,1,TAB-0ec97,es,direct_only,annotator3,3.000,3,True,3.000,19,0.000,0.000,0.500,0.136,0.364,1.000,1.000,year-kept,True
+r00005-1,1,TAB-04e12,es,direct_only,annotator3,2.000,2,True,4.000,41,0.000,0.000,0.333,0.047,0.286,1.000,1.000,leak-surname;leak-repeat-mention,True
+r00006-1,1,TAB-054e0,es,direct_only,annotator4,2.000,2,True,5.000,29,0.000,0.000,0.286,0.065,0.221,1.000,1.000,year-kept,True

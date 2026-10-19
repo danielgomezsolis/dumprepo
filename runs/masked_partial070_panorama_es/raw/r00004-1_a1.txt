@@ -1,0 +1,11 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00004-1,es,masked_partial070_panorama_es,default,output_only,default,document,indexed,4,3,3,0,1,0,1,0,0,0.750,0.750,0.667,1.000,1.000,1.000,1.000,0.750,1.000,high,high,low,EMAIL,CODE,,"PERSON-a's work email is visible in clear text after the author tag (EMAIL leak, joined to PERSON-a with medium confidence); the quoted error message tagged CODE is not personal data and counts as over-masking.",over:164-171;leak:291-311
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00004-1,masked_partial070_panorama_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_partial070_panorama_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_partial070_panorama_es,default,ORG-a,ORG1,1,1,1,1.000,1.000
+```

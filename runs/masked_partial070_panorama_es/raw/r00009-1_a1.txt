@@ -1,0 +1,11 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00009-1,es,masked_partial070_panorama_es,default,output_only,default,document,indexed,3,4,3,0,0,0,1,2,0,1.000,0.750,0.750,1.000,1.000,1.000,1.000,0.857,1.000,medium,medium,medium,ORG,,,"ORG-a (employer) left visible next to a masked person, demographic and datetime tag; the generic mentions of a chronic illness and persistent fatigue were kept as non-specific. Estimated from output only; the DEM and DATETIME tags were judged from context.",leak:190-200
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00009-1,masked_partial070_panorama_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_panorama_es,default,DEM-a,DEM1,1,1,1,1.000,1.000
+2026-10-18,r00009-1,masked_partial070_panorama_es,default,DATETIME-a,DATETIME1,1,1,1,1.000,1.000
+```

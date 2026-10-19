@@ -1,0 +1,46 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00004-1,en,masked_full_tab_en,claude-sonnet-5-5,output_only,default,document,indexed,39,31,31,0,8,0,0,4,1,0.795,1.000,1.000,1.000,1.000,1.000,1.000,0.886,1.000,low,medium,low,,ORG;MISC;DEM,overmask-authority;overmask-common-word;low-context,"No exposed entities: all 31 personal entities keep one identity each. Eight non-personal items were masked: one ORG tag, the MISC benefit term in five mentions and two generic DEM status terms. The LOC1 row is low confidence because its granularity is unknown.",overmask-placeholder
+```
+
+Correction: the last field must hold offsets only. Use this version:
+
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00004-1,en,masked_full_tab_en,claude-sonnet-5-5,output_only,default,document,indexed,39,31,31,0,8,0,0,4,1,0.795,1.000,1.000,1.000,1.000,1.000,1.000,0.886,1.000,low,medium,low,,ORG;MISC;DEM,overmask-authority;overmask-common-word;low-context,"No exposed entities: all 31 personal entities keep one identity each. Eight non-personal items were masked: one ORG tag, the MISC benefit term in five mentions and two generic DEM status terms. The LOC1 row is low confidence because its granularity is unknown.",over:75-81;over:524-531;over:1158-1165;over:1483-1489;over:1498-1505;over:1508-1515;over:1630-1637;over:1809-1815
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-1,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-2,CODE2,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-3,CODE3,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-4,CODE4,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-5,CODE5,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-6,CODE6,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-7,CODE7,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-8,CODE8,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-9,CODE9,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-10,CODE10,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-11,CODE11,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-12,CODE12,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-13,CODE13,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-14,CODE14,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-15,CODE15,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-16,CODE16,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-17,CODE17,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-18,CODE18,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,CODE-19,CODE19,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,LOC-a,LOC1,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-g,DATETIME7,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-h,DATETIME8,1,1,1,1.000,1.000
+2026-10-18,r00004-1,masked_full_tab_en,claude-sonnet-5-5,DATE-i,DATETIME9,1,1,1,1.000,1.000
+```

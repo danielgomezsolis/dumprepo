@@ -1,0 +1,10 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00006-1,es,masked_direct_only_tab_es,default,output_only,default,document,indexed,2,7,2,0,0,0,5,1,0,1.000,0.286,0.286,1.000,1.000,1.000,1.000,0.444,1.000,high,high,high,PERSON;LOCATION;AGE;HEALTH,,year-kept,"Only the case code and the applicant's name were masked. Unmasked: PERSON-b (the government agent) and PERSON-c (the applicant's son) as initials plus surname, a village-level LOCATION, an AGE and a HEALTH statement. Other disability and health mentions of the applicant also remain visible. Birth year kept as allowed. Estimated, output only.",leak:409-423;leak:931-941;leak:1331-1335;leak:4047-4054;leak:4057-4067
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00006-1,masked_direct_only_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00006-1,masked_direct_only_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+```

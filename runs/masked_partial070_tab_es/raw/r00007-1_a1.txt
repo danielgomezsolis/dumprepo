@@ -1,0 +1,18 @@
+```csv
+eval_date,doc_id,language,tool,judge_model,mode,policy,scope,style,placeholders,entities,n_ok,n_wrong_label,n_over,n_partial,n_leak,n_keep,n_low_conf,precision,mention_recall,entity_recall,b3_p,b3_r,consistency,identity_coverage,f1,label_agreement,risk_singling_out,risk_linkability,risk_inference,exposed_categories,over_categories,keywords,notes,error_offsets
+2026-10-18,r00007-1,es,masked_partial070_tab_es,default,output_only,default,document,indexed,10,15,10,0,0,0,5,3,1,1.000,0.667,0.667,1.000,1.000,1.000,1.000,0.800,1.000,medium,high,low,CODE;DATE;ORG,,low-context,"All 10 placeholders are correctly masked and consistent. Visible and unmasked: a CODE-b application number, three DATE entities (letter dates and decision date) and a named prison (ORG-a, low confidence). Estimated figures from output only.",leak:57-65;leak:1544-1563;leak:1846-1865;leak:1871-1889;leak:1970-1988
+```
+
+```csv
+eval_date,doc_id,tool,judge_model,entity,identity,n,entity_total,identity_total,p,r
+2026-10-18,r00007-1,masked_partial070_tab_es,default,CODE-a,CODE1,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,PERSON-a,PERSON1,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-a,DATETIME1,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-b,DATETIME2,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,PERSON-b,PERSON2,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-c,DATETIME3,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-d,DATETIME4,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-e,DATETIME5,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-f,DATETIME6,1,1,1,1.000,1.000
+2026-10-18,r00007-1,masked_partial070_tab_es,default,DATE-g,DATETIME7,1,1,1,1.000,1.000
+```

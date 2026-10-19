@@ -1,0 +1,3 @@
+language,condition,judgments,lines_valid,placeholders_exact,placeholders_mae,judged_leaks,gold_leaks,false_leak_share,judged_over,judged_recall,gold_recall,recall_mae,judged_consistency,gold_consistency
+ALL,direct_only,10,1.000,1.000,0.000,4.400,28.300,,0.000,0.405,0.096,0.309,1.000,1.000
+es,direct_only,10,1.000,1.000,0.000,4.400,28.300,,0.000,0.405,0.096,0.309,1.000,1.000
